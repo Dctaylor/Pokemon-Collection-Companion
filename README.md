@@ -16,4 +16,4 @@ This service account must then be given access to the spreadsheet by sharing the
 
 ## Images
 ![Home Page](./images/homePage.PNG)
-![Listing Ready for Addition](./images/listingReady.PNG)
+![Listing Ready for Addition](images/listingReady.png)
