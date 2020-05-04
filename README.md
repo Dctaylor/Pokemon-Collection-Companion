@@ -15,5 +15,5 @@ Requires a copy of the above spreadsheet in your Google Drive, as well as a cred
 This service account must then be given access to the spreadsheet by sharing the sheet with it. 
 
 ## Images
-![Home Page](./images/homePage.PNG)
+![Home Page](images/homePage.PNG)
 ![Listing Ready for Addition](images/listingReady.png)
