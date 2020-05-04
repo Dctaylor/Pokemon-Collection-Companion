@@ -1,0 +1,3418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>864</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pokemon Tracker Companion</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="pokemonLineEdit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="pokemonLabel">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Pokemon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(76, 76, 76);</string>
+       </property>
+       <attribute name="title">
+        <string>Shiny For Trade</string>
+       </attribute>
+       <widget class="QComboBox" name="sftBallDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cherish Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dive Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dream Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dusk Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Friend Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Great Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heal Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heavy Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Level Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Love Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lure Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Luxury Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Master Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moon Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nest Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Net Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Park Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Poke Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Premier Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quick Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Repeat Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Safari Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sport Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timer Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ultra Ball</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sftBallLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ball</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sftNatureDropdown">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="maxVisibleItems">
+         <number>10</number>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Adamant (+Atk,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bashful (+SpA,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bold (+Def, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brave (+Atk, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Calm (+SpD, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Careful (+SpD, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Docile (+Def, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gentle (+SpD, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardy (+Atk, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hasty (+Spe, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Impish (+Def, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jolly (+Spe, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lax (+Def, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lonely (+Atk, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mild (+SpA, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modest (+SpA, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naive (+Spe, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naughty (+Atk, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quiet (+SpA, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quirky (+SpD, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rash (+SpA, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Relaxed (+Def, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sassy (+SpD, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Serious (+Spe, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timid (+Spe, -Atk)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sftNatureLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>12</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nature</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftAbilityLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ability</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sftAbilityDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hidden Ability</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QRadioButton" name="sftGMaxRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>60</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftGMaxLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>40</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>G-Max</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="sftIvBox">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>30</y>
+          <width>181</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Ivs</string>
+        </property>
+        <widget class="QRadioButton" name="sftHpRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>HP</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="sftAtkRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Atk</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="sftDefRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Def</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="sftSpaRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>40</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>SpA</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="sftSpdRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>60</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>SpD</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="sftSpeRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>80</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Spe</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="sftZeroSpeedLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>90</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0 Speed</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="sftZeroSpeedRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>110</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftOtLabel">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>80</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>OT</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sftOtLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>80</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftIdLabel">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>110</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sftIdLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="sftSubmitPushButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>200</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftObtainedLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>230</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Obtained</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="sftObtainedLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>230</y>
+          <width>191</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sftImage">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>221</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sftGenderComboBox">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>180</y>
+          <width>101</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Genderless</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sftGenderLabel">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>150</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Gender</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sftSTypeComboBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Star</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Square</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="sftSTypeLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>150</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Shiny Type</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Aprimon For Trade</string>
+       </attribute>
+       <widget class="QComboBox" name="aftBallDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dream Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Friend Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heavy Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Level Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Love Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lure Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moon Ball</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QRadioButton" name="aftGMaxRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>40</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aftGMaxLabel">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>20</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>G-Max</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aftAbilityLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ability</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aftNatureLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>12</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nature</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="aftNatureDropdown">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Adamant (+Atk,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bashful (+SpA,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bold (+Def, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brave (+Atk, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Calm (+SpD, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Careful (+SpD, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Docile (+Def, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gentle (+SpD, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardy (+Atk, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hasty (+Spe, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Impish (+Def, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jolly (+Spe, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lax (+Def, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lonely (+Atk, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mild (+SpA, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modest (+SpA, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naive (+Spe, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naughty (+Atk, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quiet (+SpA, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quirky (+SpD, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rash (+SpA, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Relaxed (+Def, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sassy (+SpD, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Serious (+Spe, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timid (+Spe, -Atk)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="aftZeroSpeedLabel">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>70</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0 Speed</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aftSubmitPushButton">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>210</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="aftAbilityDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hidden Ability</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="aftBallLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ball</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="aftZeroSpeedRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="aftIvDropdown">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>130</y>
+          <width>91</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="aftIvLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>93</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ivs</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aftStockLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>130</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Stock</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="aftStockSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>130</y>
+          <width>42</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="aftImage">
+        <property name="geometry">
+         <rect>
+          <x>486</x>
+          <y>22</y>
+          <width>221</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Shiny</string>
+       </attribute>
+       <widget class="QRadioButton" name="shinyZeroSpeedRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>110</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="shinyIvBox">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>30</y>
+          <width>181</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Ivs</string>
+        </property>
+        <widget class="QRadioButton" name="shinyHpRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>HP</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="shinyAtkRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Atk</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="shinyDefRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Def</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="shinySpaRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>40</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>SpA</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="shinySpdRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>60</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>SpD</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="shinySpeRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>80</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Spe</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="shinyAbilityLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ability</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinyGMaxLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>40</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>G-Max</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinyZeroSpeedLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>90</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0 Speed</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinyImage">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>221</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="shinyGMaxRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>60</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinyBallLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ball</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="shinyNatureDropdown">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Adamant (+Atk,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bashful (+SpA,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bold (+Def, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brave (+Atk, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Calm (+SpD, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Careful (+SpD, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Docile (+Def, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gentle (+SpD, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardy (+Atk, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hasty (+Spe, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Impish (+Def, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jolly (+Spe, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lax (+Def, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lonely (+Atk, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mild (+SpA, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modest (+SpA, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naive (+Spe, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naughty (+Atk, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quiet (+SpA, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quirky (+SpD, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rash (+SpA, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Relaxed (+Def, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sassy (+SpD, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Serious (+Spe, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timid (+Spe, -Atk)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="shinySubmitPushButton">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>200</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="shinyAbilityDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hidden Ability</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="shinyBallDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cherish Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dive Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dream Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dusk Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Friend Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Great Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heal Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heavy Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Level Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Love Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lure Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Luxury Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Master Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moon Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nest Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Net Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Park Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Poke Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Premier Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quick Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Repeat Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Safari Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sport Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timer Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ultra Ball</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="shinyNatureLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>12</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nature</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinyNicknameLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>90</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="shinyNicknameLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>130</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="shinySTypeLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>173</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Shiny Type</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="shinySTypeComboBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>200</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Star</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Square</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="shinyGenderLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>173</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Gender</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="shinyGenderComboBox">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>200</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Genderless</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Battler/Keep</string>
+       </attribute>
+       <widget class="QLabel" name="battleAbilityLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ability</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="battleBallDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cherish Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dive Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dream Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dusk Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fast Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Friend Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Great Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heal Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heavy Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Level Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Love Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lure Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Luxury Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Master Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moon Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nest Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Net Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Park Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Poke Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Premier Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quick Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Repeat Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Safari Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sport Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timer Ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ultra Ball</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="battleNatureLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>12</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nature</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="battleZeroSpeedLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>67</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>0 Speed</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="battleNatureDropdown">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Adamant (+Atk,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bashful (+SpA,-SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bold (+Def, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brave (+Atk, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Calm (+SpD, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Careful (+SpD, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Docile (+Def, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Gentle (+SpD, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardy (+Atk, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hasty (+Spe, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Impish (+Def, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jolly (+Spe, -SpA)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lax (+Def, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lonely (+Atk, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mild (+SpA, -Def)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modest (+SpA, -Atk)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naive (+Spe, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Naughty (+Atk, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quiet (+SpA, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quirky (+SpD, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rash (+SpA, -SpD)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Relaxed (+Def, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sassy (+SpD, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Serious (+Spe, -Spe)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Timid (+Spe, -Atk)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="battleNicknameLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>110</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="battleGMaxLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>17</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>G-Max</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="battleGMaxRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>37</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="battleAbilityDropdown">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ability 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hidden Ability</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="battleBallLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ball</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="battleIvBox">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>30</y>
+          <width>181</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Ivs</string>
+        </property>
+        <widget class="QRadioButton" name="battleHpRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>41</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>HP</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="battleAtkRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Atk</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="battleDefRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Def</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="battleSpaRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>40</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>SpA</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="battleSpdRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>60</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>SpD</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="battleSpeRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>80</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Spe</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="battleNicknameLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>80</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="battleImage">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>221</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="battleSubmitPushButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>200</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="battleZeroSpeedRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>87</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="battleShinyLabel">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>120</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Shiny</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="battleShinyRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>140</y>
+          <width>21</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="battleMovesGroupBox">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>230</y>
+          <width>331</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <widget class="QLabel" name="battleMove1Label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>61</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Move 1</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="battleMove1LineEdit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="battleMove2Label">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>61</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Move 2</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="battleMove2LineEdit">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="battleMove3LineEdit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="battleMove3Label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>61</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Move 3</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="battleMove4LineEdit">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="battleMove4Label">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>100</y>
+           <width>61</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Move 4</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="battleSTypeLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>150</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Shiny Type</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="battleSTypeComboBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Star</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Square</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="battleGenderLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>150</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Gender</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="battleGenderComboBox">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>180</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Genderless</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="errorLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="updateRowsButton">
+      <property name="text">
+       <string>Update Free Rows</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>864</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
